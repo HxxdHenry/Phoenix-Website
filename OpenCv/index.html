@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCV Workshop - Unleash the Power of Vision</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="opencv.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Animated Grid Background -->
+    <div class="grid-bg"></div>
+    <div class="gradient-overlay"></div>
+    <div class="scanlines"></div>
+
+    <!-- Animated Shapes -->
+    <div class="shapes-container">
+        <div class="shape shape-circle"></div>
+        <div class="shape shape-triangle"></div>
+        <div class="shape shape-square"></div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div id="particles"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-link">
+                <svg class="logo-svg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="redEdge" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#FF5E00"/>
+                        <stop offset="100%" stop-color="#FF7A00"/>
+                        </linearGradient>
+                        <linearGradient id="blueEdge" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#00B2FF"/>
+                        <stop offset="100%" stop-color="#0080FF"/>
+                        </linearGradient>
+                        <linearGradient id="greenEdge" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#00FF88"/>
+                        <stop offset="100%" stop-color="#00CC66"/>
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Circles with gradient stroke -->
+                    <circle cx="12" cy="12" r="6" fill="none" stroke="url(#redEdge)" stroke-width="3"/>
+                    <circle cx="28" cy="12" r="6" fill="none" stroke="url(#blueEdge)" stroke-width="3"/>
+                    <circle cx="20" cy="28" r="6" fill="none" stroke="url(#greenEdge)" stroke-width="3"/>
+
+                    <!-- subtle center dots -->
+                    <circle cx="12" cy="12" r="2" fill="#FFFFFF"/>
+                    <circle cx="28" cy="12" r="2" fill="#FFFFFF"/>
+                    <circle cx="20" cy="28" r="2" fill="#FFFFFF"/>
+                </svg>
+
+
+                <span class="logo-text">OpenCV Workshop</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#resources" class="nav-link">Resources</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="text-rotator">
+                <div class="text-set active">
+                    <h1 class="glitch-text" data-text="OpenCV">OpenCV</h1>
+                    <p class="subtitle">Master the art of Computer Vision — hands-on.</p>
+                </div>
+                <div class="text-set">
+                    <h1 class="glitch-text" data-text="Workshop">Workshop</h1>
+                    <p class="subtitle">An Initiative by Phoenix LNMIIT.</p>
+                </div>
+            </div>
+        </div>
+        <div class="cta-container">
+            <a href="#resources" class="cta-button cta-primary">Get Started</a>
+            <a href="#introduction" class="cta-button cta-secondary">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="introduction">
+        <h2 class="section-title">About OpenCV</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Open CV — where vision meets innovation</h2>
+                <p>A powerful open-source library that brings computer vision and image processing to life. From face detection to object tracking, OpenCV is the ultimate toolkit for visual intelligence and AI innovation — enabling computers to see, analyze, and interact with the world around them.</p>
+                <p>Build with flexibility and speed, supports multiple languages like Python, C++, and Java, making it easy for anyone to get started. Its rich set of tools helps you design, experiment, and bring ideas to life faster. </p>
+                <p>Whether you’re just starting out or already deep into AI, OpenCV gives you the power to create and innovate with ease. From fun projects to advanced AI applications, it’s where creativity meets code.</p>
+            </div>
+            <div class="about-visual">
+                <div class="about-graphic"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section with Tabs -->
+    <section class="features" id="resources">
+        <h2 class="section-title">Getting Started...</h2>
+        <div class="features-container">
+            <div class="feature-tabs">
+                <div class="tab-item active" data-tab="Installation">
+                    <span class="tab-icon">⚙️</span>
+                    <span>Installation</span>
+                </div>
+                <div class="tab-item" data-tab="Documentation">
+                    <span class="tab-icon">📚</span>
+                    <span>Documentation</span>
+                </div>
+            </div>
+
+            <div class="feature-content">
+                <div class="content-panel active" id="Installation">
+                    <h3>Setting up the Environment</h3>
+                    <p>Experience unprecedented speed with our quantum-powered infrastructure. Built on cutting-edge technology that delivers results at the speed of thought. Electric Xtra CSS template is brought to you by TemplateMo website.</p>
+                    <ul class="feature-list">
+                        <li><a href="https://www.kaggle.com/datasets?search=computer+vision" target="_blank"></a>Installation Guide</a></li>
+                    </ul>
+                </div>
+                <div class="content-panel" id="Documentation">
+                    <h3>Explore the Vision Stack</h3>
+                    <p>Dive into the world of OpenCV with complete documentation and library guides. Gain hands-on experience with libraries that make vision-based AI simple and powerful. Start your journey from basic concepts to advanced image intelligence.</p>
+                    <ul class="feature-list">
+                        <li><a href="https://docs.opencv.org/" target="_blank">OpenCV Documentation</a></li>
+                        <li><a href="https://developers.google.com/mediapipe/solutions" target="_blank">MediaPipe Solutions Guide</a></li>
+                        <li><a href="https://numpy.org/doc/stable/user/index.html" target="_blank">NumPy User Guide</a></li>
+                        <li><a href="https://scikit-image.org/docs/stable/" target="_blank">scikit-image’s Documentation</a></li>
+                        <li><a href="https://www.kaggle.com/datasets?search=computer+vision" target="_blank">Kaggle Computer Vision Datasets</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+<script src="opencv.js"></script>
+</body>
+</html>
