@@ -288,15 +288,21 @@ const navLinks = document.querySelectorAll('.nav-link');
 if (navLinks.length) {
   navLinks.forEach(link => {
     link.addEventListener('click', function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href')?.substring(1);
-      if (!targetId) return;
-      const targetSection = document.getElementById(targetId);
-      const headerHeight = header ? header.offsetHeight : 0;
-      if (targetSection) {
-        const targetPosition = targetSection.offsetTop - headerHeight;
-        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+      const href = this.getAttribute('href');
+
+      // ✅ Only intercept links that start with '#'
+      if (href && href.startsWith('#')) {
+        e.preventDefault();
+        const targetId = href.substring(1);
+        const targetSection = document.getElementById(targetId);
+        const headerHeight = header ? header.offsetHeight : 0;
+        if (targetSection) {
+          const targetPosition = targetSection.offsetTop - headerHeight;
+          window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+        }
       }
+
+      // ✅ Always close mobile menu regardless
       navMenu?.classList.remove('active');
       menuToggle?.classList.remove('active');
     });
