@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenCV Workshop - Unleash the Power of Vision</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="opencv.css" rel="stylesheet">
-
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenCV - Unleash the Power of Vision</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="opencv.css" rel="stylesheet" />
+  </head>
+  <body>
     <!-- Animated Grid Background -->
     <div class="grid-bg"></div>
     <div class="gradient-overlay"></div>
@@ -16,9 +18,9 @@
 
     <!-- Animated Shapes -->
     <div class="shapes-container">
-        <div class="shape shape-circle"></div>
-        <div class="shape shape-triangle"></div>
-        <div class="shape shape-square"></div>
+      <div class="shape shape-circle"></div>
+      <div class="shape shape-triangle"></div>
+      <div class="shape shape-square"></div>
     </div>
 
     <!-- Floating Particles -->
@@ -26,151 +28,641 @@
 
     <!-- Navigation -->
     <nav id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo-link">
-                <svg class="logo-svg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <linearGradient id="redEdge" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#FF5E00"/>
-                        <stop offset="100%" stop-color="#FF7A00"/>
-                        </linearGradient>
-                        <linearGradient id="blueEdge" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#00B2FF"/>
-                        <stop offset="100%" stop-color="#0080FF"/>
-                        </linearGradient>
-                        <linearGradient id="greenEdge" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#00FF88"/>
-                        <stop offset="100%" stop-color="#00CC66"/>
-                        </linearGradient>
-                    </defs>
+      <div class="nav-container">
+        <a href="#home" class="logo-link">
+          <svg
+            class="logo-svg"
+            viewBox="0 0 40 40"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient id="redEdge" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FF5E00" />
+                <stop offset="100%" stop-color="#FF7A00" />
+              </linearGradient>
+              <linearGradient id="blueEdge" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#00B2FF" />
+                <stop offset="100%" stop-color="#0080FF" />
+              </linearGradient>
+              <linearGradient
+                id="greenEdge"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stop-color="#00FF88" />
+                <stop offset="100%" stop-color="#00CC66" />
+              </linearGradient>
+            </defs>
 
-                    <!-- Circles with gradient stroke -->
-                    <circle cx="12" cy="12" r="6" fill="none" stroke="url(#redEdge)" stroke-width="3"/>
-                    <circle cx="28" cy="12" r="6" fill="none" stroke="url(#blueEdge)" stroke-width="3"/>
-                    <circle cx="20" cy="28" r="6" fill="none" stroke="url(#greenEdge)" stroke-width="3"/>
+            <!-- Circles with gradient stroke -->
+            <circle
+              cx="12"
+              cy="12"
+              r="6"
+              fill="none"
+              stroke="url(#redEdge)"
+              stroke-width="3"
+            />
+            <circle
+              cx="28"
+              cy="12"
+              r="6"
+              fill="none"
+              stroke="url(#blueEdge)"
+              stroke-width="3"
+            />
+            <circle
+              cx="20"
+              cy="28"
+              r="6"
+              fill="none"
+              stroke="url(#greenEdge)"
+              stroke-width="3"
+            />
 
-                    <!-- subtle center dots -->
-                    <circle cx="12" cy="12" r="2" fill="#FFFFFF"/>
-                    <circle cx="28" cy="12" r="2" fill="#FFFFFF"/>
-                    <circle cx="20" cy="28" r="2" fill="#FFFFFF"/>
-                </svg>
+            <!-- subtle center dots -->
+            <circle cx="12" cy="12" r="2" fill="#FFFFFF" />
+            <circle cx="28" cy="12" r="2" fill="#FFFFFF" />
+            <circle cx="20" cy="28" r="2" fill="#FFFFFF" />
+          </svg>
 
-
-                <span class="logo-text">OpenCV Workshop</span>
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#introduction" class="nav-link">Introduction</a></li>
-                <li><a href="#resources" class="nav-link">Resources</a></li>
-            </ul>
-            <div class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+          <span class="logo-text">OpenCV</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#introduction" class="nav-link">Introduction</a></li>
+          <li><a href="#resources" class="nav-link">Resources</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="text-rotator">
-                <div class="text-set active">
-                    <h1 class="glitch-text" data-text="OpenCV">OpenCV</h1>
-                    <p class="subtitle">Master the art of Computer Vision — hands-on.</p>
-                </div>
-                <div class="text-set">
-                    <h1 class="glitch-text" data-text="Workshop">Workshop</h1>
-                    <p class="subtitle">An Initiative by Phoenix LNMIIT.</p>
-                </div>
-            </div>
+      <div class="hero-content">
+        <div class="text-rotator">
+          <div class="text-set active">
+            <h1 class="glitch-text" data-text="OpenCV">OpenCV</h1>
+            <p class="subtitle">
+              Master the art of Computer Vision — hands-on.
+            </p>
+          </div>
+          <div class="text-set">
+            <h1 class="glitch-text" data-text="OpenCV">OpenCV</h1>
+            <p class="subtitle">An Initiative by Phoenix LNMIIT.</p>
+          </div>
         </div>
-        <div class="cta-container">
-            <a href="#resources" class="cta-button cta-primary">Get Started</a>
-            <a href="#introduction" class="cta-button cta-secondary">Learn More</a>
-        </div>
+      </div>
+      <div class="cta-container">
+        <a href="#resources" class="cta-button cta-primary">Get Started</a>
+        <a href="#introduction" class="cta-button cta-secondary">Learn More</a>
+      </div>
     </section>
 
     <!-- About Section -->
     <section class="about" id="introduction">
-        <h2 class="section-title">About OpenCV</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <h2>Open CV — where vision meets innovation</h2>
-                <p>A powerful open-source library that brings computer vision and image processing to life. From face detection to object tracking, OpenCV is the ultimate toolkit for visual intelligence and AI innovation — enabling computers to see, analyze, and interact with the world around them.</p>
-                <p>Build with flexibility and speed, supports multiple languages like Python, C++, and Java, making it easy for anyone to get started. Its rich set of tools helps you design, experiment, and bring ideas to life faster. </p>
-                <p>Whether you’re just starting out or already deep into AI, OpenCV gives you the power to create and innovate with ease. From fun projects to advanced AI applications, it’s where creativity meets code.</p>
-            </div>
-            <div class="about-visual">
-                <div class="about-graphic"></div>
-            </div>
+      <h2 class="section-title">About OpenCV</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Open CV — where vision meets innovation</h2>
+          <p>
+            A powerful open-source library that brings computer vision and image
+            processing to life. From face detection to object tracking, OpenCV
+            is the ultimate toolkit for visual intelligence and AI innovation —
+            enabling computers to see, analyze, and interact with the world
+            around them.
+          </p>
+          <p>
+            Build with flexibility and speed, supports multiple languages like
+            Python, C++, and Java, making it easy for anyone to get started. Its
+            rich set of tools helps you design, experiment, and bring ideas to
+            life faster.
+          </p>
+          <p>
+            Whether you're just starting out or already deep into AI, OpenCV
+            gives you the power to create and innovate with ease. From fun
+            projects to advanced AI applications, it's where creativity meets
+            code.
+          </p>
         </div>
+        <div class="about-visual">
+          <div class="about-graphic"></div>
+        </div>
+      </div>
     </section>
 
     <!-- Features Section with Tabs -->
     <section class="features" id="resources">
-        <h2 class="section-title">Getting Started...</h2>
-        <div class="features-container">
-            <div class="feature-tabs">
-                <div class="tab-item active" data-tab="Installation">
-                    <span class="tab-icon">⚙️</span>
-                    <span>Installation</span>
-                </div>
-                <div class="tab-item" data-tab="Documentation">
-                    <span class="tab-icon">📚</span>
-                    <span>Documentation</span>
-                </div>
-                <div class="tab-item" data-tab="Workshop">
-                    <span class="tab-icon">🛠️</span>
-                    <span>Workshop</span>
-                </div>
-            </div>
-
-            <div class="feature-content">
-                <div class="content-panel active" id="Installation">
-                    <h3>Setting up the Environment</h3>
-
-                    <!-- YouTube video embed -->
-                    <div class="video-wrapper">
-                        <iframe
-                            src="https://drive.google.com/file/d/1YDZPBnNnxLCa_VYQEbRjuFVbOxv161I-/preview"
-                            allow="autoplay"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-
-                    <ul class="feature-list">
-                        <li><a href="https://www.notion.so/OpenCV-Python-Setup-Guide-2a5b4df29d6b800a87e3d0945745bd8c" target="_blank">Installation Guide</a></li>
-                    </ul>
-                </div>
-
-                <div class="content-panel" id="Documentation">
-                    <h3>Explore the Vision Stack</h3>
-                    <p>Dive into the world of OpenCV with complete documentation and library guides. Gain hands-on experience with libraries that make vision-based AI simple and powerful. Start your journey from basic concepts to advanced image intelligence.</p>
-                    <ul class="feature-list">
-                        <li><a href="https://docs.opencv.org/" target="_blank">OpenCV Documentation</a></li>
-                        <li><a href="https://developers.google.com/mediapipe/solutions" target="_blank">MediaPipe Solutions Guide</a></li>
-                        <li><a href="https://numpy.org/doc/stable/user/index.html" target="_blank">NumPy User Guide</a></li>
-                        <li><a href="https://scikit-image.org/docs/stable/" target="_blank">scikit-image’s Documentation</a></li>
-                        <li><a href="https://www.kaggle.com/datasets?search=computer+vision" target="_blank">Kaggle Computer Vision Datasets</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="content-panel" id="Workshop">
-                    <h3>Workshop</h3>
-                    <ul class="feature-list">
-                        <li><a href="https://1drv.ms/i/c/711fb25337c45c1a/ER9fgXDwZSpLrJee0i_Gi_gBRri0uz5zYcuQp3YKsoaKNA?e=gB0nO8" target="_blank">Cat.jpg</a></li>
-                        <li><a href="https://www.notion.so/2a75588f1e758007aa5edca174292156?source=copy_link" target="_blank">Notion</a></li>
-                        <li>Set-ExecutionPolicy RemoteSigned -Scope CurrentUser</li>
-                        <li><a href="https://github.com/Ganduga/OpenCV-workshop" target="_blank">Subway Surfers by Sachin Sir</a></li>
-                    </ul>
-
-                </div>
-
-            </div>
+      <h2 class="section-title">Getting Started...</h2>
+      <div class="features-container">
+        <div class="feature-tabs">
+          <div class="tab-item active" data-tab="Installation">
+            <span class="tab-icon">💻</span>
+            <span>Installation</span>
+          </div>
+          <div class="tab-item" data-tab="Documentation">
+            <span class="tab-icon">📚</span>
+            <span>Documentation</span>
+          </div>
+          <div class="tab-item" data-tab="Workshop">
+            <span class="tab-icon">🤖</span>
+            <span>Workshop</span>
+          </div>
+          <div class="tab-item" data-tab="Resources">
+            <span class="tab-icon">🎥</span>
+            <span>Resources</span>
+          </div>
+          <div class="tab-item" data-tab="Tasks">
+            <span class="tab-icon">🚀</span>
+            <span>Tasks</span>
+          </div>
         </div>
+
+        <div class="feature-content">
+          <div class="content-panel active" id="Installation">
+            <h3>Setting up the Environment</h3>
+            <div class="video-wrapper">
+              <iframe
+                src="https://drive.google.com/file/d/1YDZPBnNnxLCa_VYQEbRjuFVbOxv161I-/preview"
+                allow="autoplay"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+
+            <ul class="feature-list">
+              <li>
+                <a
+                  href="https://www.notion.so/OpenCV-Python-Setup-Guide-2a5b4df29d6b800a87e3d0945745bd8c"
+                  target="_blank"
+                  >Installation Guide</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="content-panel" id="Documentation">
+            <h3>Explore the Vision Stack</h3>
+            <p>
+              Dive into the world of OpenCV with complete documentation and
+              library guides. Gain hands-on experience with libraries that make
+              vision-based AI simple and powerful. Start your journey from basic
+              concepts to advanced image intelligence.
+            </p>
+            <ul class="feature-list">
+              <li>
+                <a href="https://docs.opencv.org/" target="_blank"
+                  >OpenCV Documentation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://developers.google.com/mediapipe/solutions"
+                  target="_blank"
+                  >MediaPipe Solutions Guide</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://numpy.org/doc/stable/user/index.html"
+                  target="_blank"
+                  >NumPy User Guide</a
+                >
+              </li>
+              <li>
+                <a href="https://scikit-image.org/docs/stable/" target="_blank"
+                  >scikit-image's Documentation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.kaggle.com/datasets?search=computer+vision"
+                  target="_blank"
+                  >Kaggle Computer Vision Datasets</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="content-panel" id="Workshop">
+            <h3>Hands-on Vision for Robotics</h3>
+            <ul class="feature-list">
+              <li>
+                <a
+                  href="https://1drv.ms/i/c/711fb25337c45c1a/ER9fgXDwZSpLrJee0i_Gi_gBRri0uz5zYcuQp3YKsoaKNA?e=gB0nO8"
+                  target="_blank"
+                  >Cat.jpg</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.notion.so/2a75588f1e758007aa5edca174292156?source=copy_link"
+                  target="_blank"
+                  >Notion</a
+                >
+              </li>
+              <li>Set-ExecutionPolicy RemoteSigned -Scope CurrentUser</li>
+              <li>
+                <a
+                  href="https://github.com/Ganduga/OpenCV-workshop"
+                  target="_blank"
+                  >Subway Surfers by Sachin Sir</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="content-panel" id="Resources">
+            <h3>Learn more at...</h3>
+
+            <div class="video-grid">
+              <div class="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/videoseries?list=PLMoSUbG1Q_r_sc0x7ndCsqdIkL7dwrmNF"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+
+              <div class="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/01sAkU_NvOY?si=fIboWpmPZ_8ewU29"
+                  allow="autoplay"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </div>
+
+            <div class="video-grid">
+              <div class="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/oXlwWbU8l2o?si=tsunatDqOfloj0DY"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+              <div class="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/videoseries?si=HlykCZC9q3fn2_CW&amp;list=PLMoSUbG1Q_r8jFS04rot-3NzidnV54Z2q"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </div>
+
+            <ul class="feature-list">
+              <li>
+                <a
+                  href="https://pyimagesearch.com/2018/07/19/opencv-tutorial-a-guide-to-learn-opencv/"
+                  target="_blank"
+                  >OpenCV Tutorial: A Guide to Learn OpenCV</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="content-panel" id="Tasks">
+            <h3>Let's get working</h3>
+
+            <div class="task-accordion">
+              <!-- BASIC PROJECTS -->
+              <div class="task-item">
+                <button class="task-header">Basic Projects</button>
+                <div class="task-body">
+                  <ul class="feature-list">
+                    <li>Volume Control</li>
+                    <li>Attendance Portal</li>
+                    <li>Finger Counter</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="task-item">
+                <button class="task-header">
+                  Advanced Hand Interaction System
+                </button>
+                <div class="task-body">
+                  <p>
+                    <strong>Project:</strong> Gesture-Driven Desktop Control
+                    Panel
+                  </p>
+                  <p>
+                    <strong>Task Description:</strong>
+                  </p>
+                  <p>
+                    Create a floating on-screen control panel operated entirely
+                    by hand gestures:
+                  </p>
+                  <ul class="feature-list">
+                    <li>Pinch to select control</li>
+                    <li>Vertical finger movement to adjust value</li>
+                    <li>Fist to confirm</li>
+                    <li>Palm to cancel</li>
+                  </ul>
+                  <p>Controls must include at least:</p>
+                  <ul class="feature-list">
+                    <li>Scroll control</li>
+                    <li>Zoom Control</li>
+                    <li>One custom user-defined control</li>
+                  </ul>
+                  <p>
+                    <strong>Mandatory Technical Requirements:</strong>
+                  </p>
+                  <ul class="feature-list">
+                    <li>MediaPipe Hands</li>
+                    <li>Landmark-based pinch detection</li>
+                    <li>Temporal smoothing to avoid jitter</li>
+                    <li>State machine design</li>
+                  </ul>
+                  <p>
+                    <strong>Grading Rubric (20 Marks)</strong>
+                  </p>
+                  <ul class="feature-list">
+                    <li>Gesture accuracy and stability: 6</li>
+                    <li>Correct landmark logic explanation: 5</li>
+                    <li>State handling and transitions: 5</li>
+                    <li>Code structure and readability: 4</li>
+                  </ul>
+                  <p>
+                    <strong>Automatic Fail Conditions:</strong>
+                  </p>
+                  <ul class="feature-list">
+                    <li>Using frame-by-frame logic without state</li>
+                    <li>Hardcoded screen coordinates</li>
+                    <li>Copying logic</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- ASSIGNMENT SET 2 -->
+              <div class="task-item">
+                <button class="task-header">
+                  Multi-Hand Coordination Project
+                </button>
+                <div class="task-body">
+                  <p>
+                    <strong>Project:</strong> Two-Hand Collaborative Gesture
+                    System
+                  </p>
+
+                  <p><strong>Task Description:</strong></p>
+                  <p>
+                    System must behave differently based on:
+                  </p>
+                  <ul class="feature-list">
+                    <li>One hand detected</li>
+                    <li>Two hands detected</li>
+                  </ul>
+
+                  <p><strong>Example Rules:</strong></p>
+                  <ul class="feature-list">
+                    <li>One hand draws</li>
+                    <li>Two hands resize or rotate object</li>
+                  </ul>
+
+                  <p><strong>Mandatory Technical Requirements:</strong></p>
+                  <ul class="feature-list">
+                    <li>Multi-hand tracking</li>
+                    <li>Hand ID consistency</li>
+                    <li>Distance and angle-based logic</li>
+                  </ul>
+
+                  <p><strong>Grading Rubric (20 Marks):</strong></p>
+                  <ul class="feature-list">
+                    <li>Reliable hand separation: 6</li>
+                    <li>Correct geometric reasoning: 6</li>
+                    <li>No landmark confusion between hands: 4</li>
+                    <li>Clean modular code: 4</li>
+                  </ul>
+
+                  <p><strong>Automatic Fail Conditions:</strong></p>
+                  <ul class="feature-list">
+                    <li>Treating two hands as one</li>
+                    <li>Using only bounding boxes</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- ASSIGNMENT SET 3 -->
+              <div class="task-item">
+                <button class="task-header">
+                  Pose Analysis with Error Feedback
+                </button>
+                <div class="task-body">
+                  <p>
+                    <strong>Project:</strong> Intelligent Exercise Form Checker
+                  </p>
+
+                  <p>
+                    <strong>Important Note:</strong> This is not an AI trainer
+                    counter. Counting reps is trivial and useless.
+                  </p>
+
+                  <p><strong>Task Description:</strong> Detect incorrect posture during:</p>
+                  <ul class="feature-list">
+                    <li>Squats</li>
+                    <li>Push-ups</li>
+                  </ul>
+
+                  <p><strong>System must:</strong></p>
+                  <ul class="feature-list">
+                    <li>Calculate joint angles</li>
+                    <li>Detect at least two form mistakes</li>
+                    <li>Show real-time visual feedback</li>
+                  </ul>
+
+                  <p><strong>Mandatory Technical Requirements:</strong></p>
+                  <ul class="feature-list">
+                    <li>MediaPipe Pose</li>
+                    <li>Angle computation using vectors</li>
+                    <li>Threshold justification</li>
+                  </ul>
+
+                  <p><strong>Grading Rubric (20 Marks):</strong></p>
+                  <ul class="feature-list">
+                    <li>Correct angle math: 6.4</li>
+                    <li>Meaningful error detection: 5.6</li>
+                    <li>Visual feedback clarity: 4</li>
+                    <li>Explanation of biomechanics: 4</li>
+                  </ul>
+
+                  <p><strong>Automatic Fail Conditions:</strong></p>
+                  <ul class="feature-list">
+                    <li>Using raw distances</li>
+                    <li>No explanation of thresholds</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- ASSIGNMENT SET 4 -->
+              <div class="task-item">
+                <button class="task-header">Face + Time Logic System</button>
+                <div class="task-body">
+                  <p><strong>Project:</strong> Proctoring Attention Monitor</p>
+
+                  <p><strong>Task Description:</strong></p>
+                  <ul class="feature-list">
+                    <li>Detect face presence</li>
+                    <li>Track eye gaze direction</li>
+                    <li>
+                      Flag distraction if user looks away continuously for more
+                      than N seconds
+                    </li>
+                  </ul>
+
+                  <p><strong>Mandatory Technical Requirements:</strong></p>
+                  <ul class="feature-list">
+                    <li>MediaPipe Face Mesh</li>
+                    <li>Eye landmarks</li>
+                    <li>Time-based buffering</li>
+                  </ul>
+
+                  <p><strong>Grading Rubric (20 Marks):</strong></p>
+                  <ul class="feature-list">
+                    <li>Eye landmark usage correctness: 6</li>
+                    <li>Time logic implementation: 6</li>
+                    <li>False positive reduction: 4</li>
+                    <li>Code clarity: 4</li>
+                  </ul>
+
+                  <p><strong>Automatic Fail Conditions:</strong></p>
+                  <ul class="feature-list">
+                    <li>Checking only head direction</li>
+                    <li>Single-frame decisions</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- TASK 3 HACKATHON -->
+              <div class="task-item">
+                <button class="task-header">
+                  Hackathon: Touchless Lab Equipment Interface
+                </button>
+                <div class="task-body">
+                  <p><strong>Problem Statement:</strong></p>
+                  <p>
+                    In laboratories and workshops, physical interaction with
+                    keyboards, mice, and control panels can be unsafe due to
+                    contamination, gloves, hazardous materials, or hygiene
+                    restrictions.
+                    Your task is to design and build a touchless gesture-based control system that allows a user to operate laboratory or workshop equipment without touching any physical input device.
+                    The system must use a camera-based computer vision approach to detect hand gestures and convert them into safe, deliberate control actions.
+                    This is a single-round hackathon.
+                    You must design, implement, and explain your system within the given time.
+                  </p>
+
+                  <p><strong>What You Must Build (Mandatory):</strong></p>
+                  <ul class="feature-list">
+                    <li>Real-time hand detection using a camera</li>
+                    <li>Minimum 3 distinct gestures</li>
+                    <li>
+                      State-based system (IDLE, MENU, ACTION, CONFIRMATION)
+                    </li>
+                    <li>Emergency stop gesture</li>
+                    <li>Confirmation mechanism before executing actions</li>
+                    <li>On-screen visual feedback</li>
+                  </ul>
+                  <p>Keyboard or mouse input after the system starts is not allowed.</p>
+
+                  <p><strong>What You Must Explain:</strong></p>
+                  <ul class="feature-list">
+                    <li>Why each gesture was chosen</li>
+                    <li>How accidental activation is prevented</li>
+                    <li>Behavior under lag or poor lighting</li>
+                    <li>Implemented vs simplified features</li>
+                  </ul>
+
+                  <p><strong>Submission Requirements:</strong></p>
+                  <ul class="feature-list">
+                    <li>Maximum 6-slide PPT</li>
+                    <li>Live working prototype</li>
+                    <li>Partial implementation allowed</li>
+                  </ul>
+
+                  <p><strong>Constraints:</strong></p>
+                  <ul class="feature-list">
+                    <li>Team size: 2-3 members</li>
+                    <li>Programming language: Python</li>
+                    <li>Computer vision must be used</li>
+                    <li>No prerecorded demos</li>
+                    <li>No future-work-only solutions</li>
+                  </ul>
+
+                  <p><strong>Evaluation Rule - Teams will be judged on:</strong></p>
+                  <ul class="feature-list">
+                    <li>System thinking and design</li>
+                    <li>Gesture robustness</li>
+                    <li>Safety logic</li>
+                    <li>Demo reliability</li>
+                    <li>Clarity of explanation</li>
+                  </ul>
+
+                  <p><strong>Disqualification Conditions:</strong></p>
+                  <ul class="feature-list">
+                    <li>No emergency stop gesture</li>
+                    <li>No state-based logic</li>
+                    <li>Keyboard or mouse used during demo</li>
+                    <li>Inability to explain design choices</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- BONUS TASK -->
+              <div class="task-item">
+                <button class="task-header">
+                  Bonus Gesture-Based Projects
+                </button>
+                <div class="task-body">
+                  <p>
+                    <strong>Idea 1:</strong> Gesture-Based Bomb Defusal
+                    Simulator - A timed puzzle where the player must perform specific gestures in correct order to defuse a bomb.
+                  </p>
+                  <p>Gestures:</p>
+                  <ul class="feature-list">
+                    <li>Open palm → scan</li>
+                    <li>Two fingers → select wire</li>
+                    <li>Pinch → cut</li>
+                    <li>Fist → confirm</li>
+                  </ul>
+                  <p>Reject if Gestures can be done in any order</p>
+
+                  <p><strong>Idea 2:</strong> Air-Traffic Control with Hands - Control multiple airplanes using hand gestures to prevent collisions.</p>
+                  <p>Gestures:</p>
+                  <ul class="feature-list">
+                    <li>Point → select plane</li>
+                    <li>Move hand → change direction</li>
+                    <li>Two hands → emergency reroute</li>
+                  </ul>
+                  <p>Reject if Only one plane exists</p>
+
+                  <p><strong>Idea 3:</strong> Gesture-Based Escape Room - Solve puzzles using correct hand gestures.</p>
+                  <p>Examples:</p>
+                  <ul class="feature-list">
+                    <li>Rotate wrist to turn valve</li>
+                    <li>Pinch and pull to open door</li>
+                    <li>Two-hand alignment to unlock panel</li>
+                  </ul>
+                  <p>Reject if Same gesture works everywhere</p>
+
+                  <p><strong>Idea 4:</strong> Robot Arm Simulator - Control a virtual robot arm using hand orientation and gestures.</p>
+                  <p>Reject if Only position mapping without rotation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-<script src="opencv.js"></script>
-</body>
+    <script src="opencv.js"></script>
+  </body>
 </html>
