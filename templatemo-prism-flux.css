@@ -785,35 +785,10 @@ body::after {
 }
 
 /* Responsive Design */
-@media (max-width: 480px) {
-	.carousel-item {
-		width: 260px;
-		height: 420px;
-	}
-
-	.card-image {
-		height: 130px;
-	}
-
-	.card-title {
-		font-size: 18px;
-	}
-
-	.card-description {
-		font-size: 12px;
-	}
-
-	.card-cta {
-		padding: 10px 22px;
-		font-size: 13px;
-	}
-}
-
-
 @media (max-width: 1024px) {
 	.carousel-item {
-		width: 350px;
-		height: 480px;
+		width: 280px;
+		height: 380px;
 	}
 
 	.carousel-controls {
@@ -834,6 +809,30 @@ body::after {
 
 	.philosophy-pillars {
 		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 480px) {
+	.carousel-item {
+		width: 260px;
+		height: 300px;
+	}
+
+	.card-image {
+		height: 130px;
+	}
+
+	.card-title {
+		font-size: 18px;
+	}
+
+	.card-description {
+		font-size: 12px;
+	}
+
+	.card-cta {
+		padding: 10px 22px;
+		font-size: 13px;
 	}
 }
 
@@ -882,7 +881,7 @@ body::after {
 
 	.carousel-item {
 		width: 300px;
-		height: 460px;
+		height: 350px;
 	}
 
 	.carousel-item .card {
