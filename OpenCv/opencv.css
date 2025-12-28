@@ -643,7 +643,6 @@ nav.scrolled {
   border-radius: 10px;
   padding: 20px;
   backdrop-filter: blur(10px);
-  align-self: center; /* ⬅️ keeps the tab vertically centered */
   transition: transform 0.3s ease;
 }
 
