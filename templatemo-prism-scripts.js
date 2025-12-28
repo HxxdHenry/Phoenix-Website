@@ -14,7 +14,7 @@ const portfolioData = [
     title: 'OpenCV',
     description: 'Advanced computer vision framework used for image processing, real-time detection, and visual data analysis.',
     image: 'images/OpenCV.jpg',
-    url: 'https://phoenix-website-5xo.pages.dev/OpenCv/'
+    url: 'OpenCv/'
   },
   {
     id: 3,
